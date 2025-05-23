@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/main.js" defer></script>
+    <script src="js/matrix.js" defer></script>
 </head>
 <body>
     <div id="preloader">
@@ -23,8 +26,7 @@
             <ul class="main-nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#expertise-skills">Skills</a></li>
-                <li><a href="#expertise-systems">Systems</a></li>
+                <li><a href="#expertise">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -34,8 +36,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#expertise-skills">Skills</a></li>
-                <li><a href="#expertise-systems">Systems</a></li>
+                <li><a href="#expertise">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -98,114 +99,84 @@
         </section>
 
         <!-- Unified Expertise Section -->
-        <section id="expertise" class="expertise-box">
+        <div id="expertise">
+        <section class="expertise-box">
             <div class="container">
-                <h2 class="section-title">Skills, Programming & Systems Expertise</h2>
-                <div class="expertise-content">
-                    <div id="expertise-skills" class="expertise-group">
-                        <h3 class="expertise-subtitle">Skills & Expertise</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <i class="fas fa-shield-alt"></i>
-                                <h4>Network Security</h4>
-                                <ul>
-                                    <li>Firewall Configuration</li>
-                                    <li>VPN Implementation</li>
-                                    <li>Network Monitoring</li>
-                                    <li>Intrusion Detection</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fas fa-tools"></i>
-                                <h4>Security Tools</h4>
-                                <ul>
-                                    <li>Wireshark</li>
-                                    <li>Nmap</li>
-                                    <li>Metasploit</li>
-                                    <li>Burp Suite</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <i class="fas fa-lock"></i>
-                                <h4>Security Practices</h4>
-                                <ul>
-                                    <li>Risk Assessment</li>
-                                    <li>Vulnerability Testing</li>
-                                    <li>Security Auditing</li>
-                                    <li>Incident Response</li>
-                                </ul>
-                            </div>
+                <h2 class="section-title">My Expertise</h2>
+                <div class="expertise-cards">
+                    <div class="expertise-card">
+                        <div class="expertise-card-title">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Network Security</span>
+                        </div>
+                        <div class="expertise-card-underline"></div>
+                        <div class="expertise-skills-list">
+                            <div class="expertise-skill">Firewall Configuration</div>
+                            <div class="expertise-skill">VPN Implementation</div>
+                            <div class="expertise-skill">Network Monitoring</div>
+                            <div class="expertise-skill">Intrusion Detection</div>
                         </div>
                     </div>
-                    <div class="expertise-group">
-                        <h3 class="expertise-subtitle">Programming Languages</h3>
-                        <div class="languages-grid">
-                            <div class="language-card">
-                                <i class="fab fa-python"></i>
-                                <h4>Python</h4>
-                            </div>
-                            <div class="language-card">
-                                <i class="fab fa-js-square"></i>
-                                <h4>JavaScript</h4>
-                            </div>
-                            <div class="language-card">
-                                <i class="fas fa-code"></i>
-                                <h4>C / C++</h4>
-                            </div>
-                            <div class="language-card">
-                                <i class="fab fa-java"></i>
-                                <h4>Java</h4>
-                            </div>
-                            <div class="language-card">
-                                <i class="fas fa-terminal"></i>
-                                <h4>Bash / Shell</h4>
-                            </div>
-                            <div class="language-card">
-                                <i class="fas fa-terminal"></i>
-                                <h4>PowerShell</h4>
-                            </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-title">
+                            <i class="fas fa-tools"></i>
+                            <span>Security Tools</span>
+                        </div>
+                        <div class="expertise-card-underline"></div>
+                        <div class="expertise-skills-list">
+                            <div class="expertise-skill">Wireshark</div>
+                            <div class="expertise-skill">Nmap</div>
+                            <div class="expertise-skill">Metasploit</div>
+                            <div class="expertise-skill">Burp Suite</div>
                         </div>
                     </div>
-                    <div id="expertise-systems" class="expertise-group">
-                        <h3 class="expertise-subtitle">Systems Expertise</h3>
-                        <div class="systems-grid">
-                            <div class="system-card">
-                                <i class="fas fa-desktop"></i>
-                                <h4>Operating Systems</h4>
-                                <ul>
-                                    <li>Windows Server</li>
-                                    <li>Linux (Ubuntu, Kali)</li>
-                                    <li>macOS</li>
-                                    <li>Android</li>
-                                    <li>iOS</li>
-                                    <li>System Administration</li>
-                                </ul>
-                            </div>
-                            <div class="system-card">
-                                <i class="fas fa-cloud"></i>
-                                <h4>Cloud Platforms</h4>
-                                <ul>
-                                    <li>AWS Security</li>
-                                    <li>Azure Security</li>
-                                    <li>Cloud Infrastructure</li>
-                                    <li>Container Security</li>
-                                </ul>
-                            </div>
-                            <div class="system-card">
-                                <i class="fas fa-shield-virus"></i>
-                                <h4>System Security</h4>
-                                <ul>
-                                    <li>Endpoint Protection</li>
-                                    <li>System Hardening</li>
-                                    <li>Access Control</li>
-                                    <li>Patch Management</li>
-                                </ul>
-                            </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-title">
+                            <i class="fas fa-user-check"></i>
+                            <span>Security Practices</span>
+                        </div>
+                        <div class="expertise-card-underline"></div>
+                        <div class="expertise-skills-list">
+                            <div class="expertise-skill">Risk Assessment</div>
+                            <div class="expertise-skill">Vulnerability Testing</div>
+                            <div class="expertise-skill">Security Auditing</div>
+                            <div class="expertise-skill">Incident Response</div>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-title">
+                            <i class="fas fa-code"></i>
+                            <span>Programming Languages</span>
+                        </div>
+                        <div class="expertise-card-underline"></div>
+                        <div class="expertise-skills-list">
+                            <div class="expertise-skill">Python</div>
+                            <div class="expertise-skill">JavaScript</div>
+                            <div class="expertise-skill">C / C++</div>
+                            <div class="expertise-skill">Java</div>
+                            <div class="expertise-skill">Bash / Shell</div>
+                            <div class="expertise-skill">PowerShell</div>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-title">
+                            <i class="fas fa-server"></i>
+                            <span>Systems Expertise</span>
+                        </div>
+                        <div class="expertise-card-underline"></div>
+                        <div class="expertise-skills-list">
+                            <div class="expertise-skill">Windows Server</div>
+                            <div class="expertise-skill">Linux (Ubuntu, Kali)</div>
+                            <div class="expertise-skill">macOS</div>
+                            <div class="expertise-skill">Android</div>
+                            <div class="expertise-skill">iOS</div>
+                            <div class="expertise-skill">System Administration</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        </div>
 
         <section id="projects" class="projects">
             <div class="container">
@@ -231,30 +202,35 @@
         </section>
 
         <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <p>Interested in working together? Let's connect!</p>
-                <div class="contact-info">
-                    <a href="mailto:vinithprabhu2025@gmail.com" class="contact-link logo-btn" aria-label="Email Me">
-                        <i class="fas fa-envelope"></i>
-                        <span class="contact-label">Email Me</span>
-                    </a>
-                    <a href="https://x.com/VinithPrabhu_?t=H51a5CdTGf4ubWDgQ3ToVw&s=09" class="contact-link logo-btn" aria-label="X">
-                        <i class="fab fa-x-twitter"></i>
-                        <span class="contact-label">X</span>
-                    </a>
-                    <a href="https://github.com/VinithPrabhu" class="contact-link logo-btn" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                        <span class="contact-label">GitHub</span>
-                    </a>
+            <div class="container contact-container">
+                <div class="contact-left">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="contact-text">Interested in working together?<br>Let's connect!</p>
+                    <div class="contact-info">
+                        <a href="mailto:vinithprabhu2025@gmail.com" class="contact-link logo-btn" aria-label="Email Me">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/VinithPrabhu" class="contact-link logo-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/VinithPrabhu_?t=H51a5CdTGf4ubWDgQ3ToVw&s=09" class="contact-link logo-btn" aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
                 </div>
+                <form class="contact-form" autocomplete="off">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="cta-button primary">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Vinith Prabhu. All rights reserved.</p>
+            <p>&copy; 2025 Vinith Prabhu. All rights reserved.</p>
         </div>
     </footer>
     <script>
